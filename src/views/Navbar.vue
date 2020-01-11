@@ -1,6 +1,8 @@
 <template>
   <div id="navbar">
-    <v-navigation-drawer disable-resize-watcher v-model="drawer" app>
+    <v-navigation-drawer
+    class="blue lighten-4"
+     disable-resize-watcher v-model="drawer" app>
       <v-list dense>
         <v-list-item>
           <v-list-item-action>
@@ -21,7 +23,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color="indigo" dark>
+    <v-app-bar app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-sm-and-down"></v-app-bar-nav-icon>
       <v-toolbar-title><v-btn router to="/">Application</v-btn></v-toolbar-title>
       <v-spacer></v-spacer>
@@ -55,7 +57,7 @@ export default {
     items: [
       { title: "About", icon: "mdi-house", link: '/about'},
       { title: "Resume", icon: "mdi-image", link: '/resume' },
-      { title: "Projects", icon: "mdi-help-box", link: '/project' },
+      { title: "Projects", icon: "mdi-help-box", link: '/projects' },
       { title: "Contact", icon: "mdi-help-box", link: '/contact' },
       { title: "Service", icon: "mdi-help-box", link: '/service' },
     ]

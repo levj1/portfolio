@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Vuetify from '../views/Lessons/Vuetify.vue'
 import Resume from '../views/Resume.vue';
 import Contact from '../views/Contact.vue';
+import Projects from '../views/Project.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,6 +31,9 @@ const routes = [
   },
   {
     path: '/contact', name: 'contact', component: Contact
+  },
+  {
+    path: '/projects', name: 'projects', component: Projects
   },
 ]
 

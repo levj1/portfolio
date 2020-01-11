@@ -1,13 +1,12 @@
 <template>    
-    <v-footer
-      class="font-weight-medium white--text"
-      color="indigo"
+    <v-footer      
+      elevation
     >
       <v-col
         class="text-center"
         cols="12"
       >
-        {{ new Date().getFullYear() }} — <strong>Personal Site</strong>
+        {{ new Date().getFullYear() }} — <strong>Love to be of Help</strong>
       </v-col>
     </v-footer>
 </template>
